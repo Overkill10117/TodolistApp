@@ -10,6 +10,28 @@
 
 
     <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Type time: 12:00"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Time"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
         android:id="@+id/etTodo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,19 +48,19 @@
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="334dp"
+        android:layout_width="0dp"
         android:layout_height="62dp"
         android:background="@drawable/rounded_corners"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/etTodo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTodo"
         app:layout_constraintVertical_bias="0.825" />
 
     <Button
         android:id="@+id/btnCancel"
-        android:layout_width="334dp"
+        android:layout_width="0dp"
         android:layout_height="62dp"
         android:background="@drawable/rounded_corners"
         android:text="@android:string/cancel"
