@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
+
 class HomeActivity : AppCompatActivity() {
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,15 +24,20 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
         logout.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
+
         add.setOnClickListener {
             val intent = Intent(this, AddTodoActivity::class.java)
             startActivity(intent)
             finish()
         }
+
+
+
     }
 }
