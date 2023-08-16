@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 
 class HomeActivity : AppCompatActivity() {
@@ -32,9 +33,30 @@ class HomeActivity : AppCompatActivity() {
         }
 
         add.setOnClickListener {
-            val intent = Intent(this, AddTodoActivity::class.java)
-            startActivity(intent)
-            finish()
+            val dialog = BottomSheetDialog(this)
+
+            // on below line we are inflating a layout file which we have created.
+            val view = layoutInflater.inflate(R.layout.activity_add_todo, null)
+
+            // on below line we are creating a variable for our button
+            // which we are using to dismiss our dialog.
+            val btnClose = view.findViewById<Button>(R.id.btnCancel)
+
+            // on below line we are adding on click listener
+            // for our dismissing the dialog button.
+            btnClose.setOnClickListener {
+                // on below line we are calling a dismiss
+                // method to close our dialog.
+                dialog.dismiss()
+            }
+
+            // on below line we are setting
+            // content view to our view.
+            dialog.setContentView(view)
+
+            // on below line we are calling
+            // a show method to display a dialog.
+            dialog.show()
         }
 
 
