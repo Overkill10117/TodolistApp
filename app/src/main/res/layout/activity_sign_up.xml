@@ -16,35 +16,12 @@
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="42dp"
-        android:layout_height="52dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress3"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress3"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress3"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageView
         android:id="@+id/imageView6"
         android:layout_width="43dp"
         android:layout_height="47dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword4"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword3"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="?android:attr/fingerprintAuthDrawable" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="43dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="224dp"
-        app:layout_constraintBottom_toBottomOf="@+id/login"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword4"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword4"
         app:srcCompat="?android:attr/fingerprintAuthDrawable" />
 
     <Button
@@ -59,7 +36,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.698" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
@@ -67,10 +44,10 @@
         android:layout_height="48dp"
         android:layout_marginStart="99dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintHorizontal_bias="1.0"
@@ -96,28 +73,7 @@
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="LabelFor" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="191dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="232dp"
-        android:autofillHints=""
-        android:contentDescription="password"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="LabelFor" />
 
@@ -126,28 +82,12 @@
         android:layout_width="262dp"
         android:layout_height="231dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/todologo" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress3"
-        android:layout_width="193dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.17" />
 
     <TextView
         android:id="@+id/login"
